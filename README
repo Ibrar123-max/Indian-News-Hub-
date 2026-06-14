@@ -1,1 +1,40 @@
+# 📰 Indian News Hub
 
+A modern news website built using HTML, CSS, and JavaScript that fetches the latest news articles using NewsAPI.
+
+## 🚀 Live Demo
+
+🔗 View Website
+
+## ✨ Features
+
+- Latest news updates
+- Search news by keyword
+- Category-based navigation
+- Responsive design
+- Dynamic news cards
+- API integration with NewsAPI
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- NewsAPI
+
+## 📂 Project Structure
+
+- index.html
+- style.css
+- script.js
+- assets/
+
+## 📸 Screenshots
+
+(Add screenshots here)
+
+## 🔧 Setup
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/Indian-News-Hub.git
