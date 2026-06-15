@@ -1,5 +1,5 @@
 const API_KEY = "9c32685228804a968577d1da57157afe";
-const url = "https://newsapi.org/v2/everything?q=";
+const url = "https://newsapi.org/v2/everything?sortBy=publishedAt&q=";
 
 window.addEventListener("load", () => fetchNews("India"));
 
@@ -14,10 +14,16 @@ async function fetchNews(query) {
 
         console.log(data);
 
-        if (!data.articles) {
-            alert("No articles found");
+        if (data.status !== "ok") {
+            alert(data.message);
             return;
         }
+
+        bindData(data.articles);
+    } catch (error) {
+        alert("Error: " + error.message);
+    }
+}
 
         bindData(data.articles);
     } catch (error) {
